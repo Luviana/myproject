@@ -58,9 +58,11 @@ public class MainActivity extends AppCompatActivity
         int nomor = Integer.parseInt(etNo.getText().toString());
         String tanggal = etTanggal.getText().toString();
 
-        tvHasil.setText("Anda telah memesan tiket atas nama " + nama + " dengan nomor identitas"
+        tvHasil.setText("Anda telah memesan tiket " + // nama KA
+                + " atas nama " + nama + " dengan nomor identitas"
                 + nomor + " tujuan Stasiun " + spTujuan.getSelectedItem().toString() + " dari Stasiun " + spBerangkat.getSelectedItem().toString()
-                + " pada tanggal " + tanggal + " dengan jumlah tiket sebanyak ");
+                + " pada tanggal " + tanggal + " dengan jumlah tiket sebanyak " + // jumlah penumpang
+                + " orang. TERIMAKASIH");
     }
 
 }
